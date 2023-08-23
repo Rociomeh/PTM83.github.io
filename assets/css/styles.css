@@ -22,7 +22,7 @@
 
 
 /* Estilo para pantallas con un ancho máximo de 768px (tamaño típico de un dispositivo móvil en modo retrato) */
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1023px) {
     .principal-section {
         background-position: center; /* Centra la imagen de fondo */
         border-radius: 450%; /* Hace que la sección tenga forma de circunferencia */
@@ -46,13 +46,13 @@
     }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
     .name {
         display:none;
     }
 
     .principal-section {
-
+        height:40%;
     }
 
 }
