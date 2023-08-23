@@ -2,11 +2,57 @@
     padding:0px;
     margin:0px;
 }
-
+/*HEADER*/
 .principal-section {
-    height:800px;
+    height:600px;
     background-image: url("../img/bg_man_sea.jpg");
-    background-repeat: no-repeat;
     background-size:cover;
     background-position:left;
+    font-size:1.5em;
+    position:relative;
+}
+
+.name {
+    display: none; /* Oculta el nombre por defecto */
+    text-align: center;
+    font-size: 0.8em;
+    white-space: nowrap; /* Evita que el nombre se divida en varias líneas */
+}
+
+
+
+/* Estilo para pantallas con un ancho máximo de 768px (tamaño típico de un dispositivo móvil en modo retrato) */
+@media screen and (max-width: 1024px) {
+    .principal-section {
+        background-position: center; /* Centra la imagen de fondo */
+        border-radius: 450%; /* Hace que la sección tenga forma de circunferencia */
+        /* Puedes ajustar el ancho y la altura según tus necesidades */
+        width: 200px;
+        height: 200px;
+        margin: 0 auto; /* Centra la sección en la página */
+    }
+    .principal-section .container {
+        display: none; /* Hide the existing content */
+    }
+
+    .principal-section .name {
+        display: block; /* Show the name */
+        text-align: center;
+        position: absolute;
+        left:-25%;
+        margin-top:150px;
+        color:black;
+        font-size:1em;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .name {
+        display:none;
+    }
+
+    .principal-section {
+
+    }
+
 }
